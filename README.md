@@ -30,9 +30,9 @@ Features
 * Currently the implementation will support the use of three types of
 membership function:
 
-*gaussmf: Gaussian
-*gbellmf: Generalized bell
-*sigmf: Sigmoid
+* gaussmf: Gaussian
+* gbellmf: Generalized bell
+* sigmf: Sigmoid
 
 This naming is taken from scikit-fuzzy, a fuzzy logic toolkit for SciPy,
 which can be found here: https://github.com/scikit-fuzzy/scikit-fuzzy
@@ -75,7 +75,7 @@ python tests.py
 ```
 Alternatively, from the same location launch ipython and run:
 ```
-run tests.pt
+run tests.py
 ```
 
 This will set up and fit an ANFIS model based on the data contained

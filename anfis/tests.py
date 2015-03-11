@@ -12,11 +12,11 @@ mf = [[['gaussmf',{'mean':-11.,'sigma':5.}],['gaussmf',{'mean':-8.,'sigma':5.}],
 
 mfc = membership.membershipfunction.MemFuncs(mf)
 anf = anfis.ANFIS(X, Y, mfc)
-anf.trainHybridJangOffLine(epochs=5)
+anf.trainHybridJangOffLine(epochs=10)
 print round(anf.consequents[-1][0],6)
 print round(anf.consequents[-2][0],6)
 print round(anf.fittedValues[9][0],6)
-if round(anf.consequents[-1][0],6) == -5.239735 and round(anf.consequents[-2][0],6) == -2.006103 and round(anf.fittedValues[9][0],6) == 0.002373:
+if round(anf.consequents[-1][0],6) == -5.275538 and round(anf.consequents[-2][0],6) == -1.990703 and round(anf.fittedValues[9][0],6) == 0.002249:
 	print 'test is good'
 anf.plotErrors()
 anf.plotResults()

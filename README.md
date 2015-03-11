@@ -21,7 +21,8 @@ All useful contributions to make this a better project will be happily received.
 Contributions
 ============
 
-If you would like to contribute, please see the Contribution Requests:
+If you would like to contribute, please see the Issues section for ideas
+about what most needs attention.
 
 Features
 ========
@@ -29,9 +30,9 @@ Features
 * Currently the implementation will support the use of three types of
 membership function:
 
-gaussmf: Gaussian
-gbellmf: Generalized bell
-sigmf: Sigmoid
+*gaussmf: Gaussian
+*gbellmf: Generalized bell
+*sigmf: Sigmoid
 
 This naming is taken from scikit-fuzzy, a fuzzy logic toolkit for SciPy,
 which can be found here: https://github.com/scikit-fuzzy/scikit-fuzzy
@@ -60,13 +61,26 @@ Dependencies
 * Python
 * numpy
 * scikit-fuzzy
-* itertools
-* copy
+* matplotlib
 
 
 Quickstart
 ==========
 
+Install anfis and navigate to the location of anfis/tests.py
+
+From the command line run:
+```
+python tests.py
+```
+Alternatively, from the same location launch ipython and run:
+```
+run tests.pt
+```
+
+This will set up and fit an ANFIS model based on the data contained
+in 'trainingSet.txt', using 10 epochs.  Plots of the fitting errors
+and the model predicted output are graphed.
 
 
 

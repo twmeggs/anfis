@@ -136,7 +136,9 @@ class ANFIS:
             print self.trainingType
         else:
             import matplotlib.pyplot as plt
-            plt.plot(range(len(self.errors)),self.errors,'ro')
+            plt.plot(range(len(self.errors)),self.errors,'ro', label='errors')
+            plt.ylabel('error')
+            plt.xlabel('epoch')
             plt.show()
 
     def plotMF(self, x, inputVar):
@@ -160,8 +162,9 @@ class ANFIS:
             print self.trainingType
         else:
             import matplotlib.pyplot as plt
-            plt.plot(range(len(self.fittedValues)),self.fittedValues,'r')
-            plt.plot(range(len(self.Y)),self.Y,'b')
+            plt.plot(range(len(self.fittedValues)),self.fittedValues,'r', label='trained')
+            plt.plot(range(len(self.Y)),self.Y,'b', label='original')
+            plt.legend(loc='upper left')
             plt.show()
 
 

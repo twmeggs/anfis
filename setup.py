@@ -7,12 +7,16 @@ setup(name='anfis',
       author='Tim Meggs',
       author_email='twmeggs@gmail.com',
       license='MIT',
-      include_package_data = True,
+
+      package_data = {
+        # If any package contains *.txt files, include them:
+        '': ['*.txt']},
+
       dependency_links = ["https://github.com/scikit-fuzzy/scikit-fuzzy"],
-      keywords = 'anfis, fuzzy logic, neural networks'
+      keywords = 'anfis, fuzzy logic, neural networks',
       packages=find_packages(),
 
-      install_requires = ['numpy','itertools','copy','scikit-fuzzy']
+      install_requires = ['numpy','scikit-fuzzy','matplotlib'],
 
       classifiers=[
         # How mature is this project? Common values are

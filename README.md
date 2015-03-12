@@ -49,11 +49,18 @@ the current shape of its membership functions (pre or post training)
 Installation
 ============
 
-Refer to setup.py for a list of dependencies, or see below.
+anfis has a dependency on the scikit-fuzzy.  Unfortunately, as
+scikit-fuzzy is not hosted on PyPI, this package cannot be auto-installed
+as part of anfis's 'pip install'.  Therefore, please follow this sequence
+of installation:
 
-anfis may be installed by running
+Install the scikit-fuzzy package by following the instructions here:
+https://github.com/scikit-fuzzy/scikit-fuzzy
 
-    $ python setup.py install
+Once scikit-fuzzy is installed, anfis may then be installed by running:
+
+    $ pip install anfis
+
 
 Dependencies
 ------------

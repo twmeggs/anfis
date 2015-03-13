@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='anfis',
-      version='0.0.2',
+      version='0.0.3',
       description='Python Adaptive Neuro Fuzzy Inference System',
       url='https://github.com/twmeggs/anfis',
       author='Tim Meggs',
@@ -13,7 +13,6 @@ setup(name='anfis',
         '': ['*.txt']},
 
       keywords = 'anfis, fuzzy logic, neural networks',
-      packages=find_packages(),
 
       install_requires = ['numpy','matplotlib'],
 

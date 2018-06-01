@@ -16,7 +16,7 @@ setup(name='anfis',
 
       packages=find_packages(),
 
-      install_requires = ['numpy','matplotlib'],
+      install_requires = ['numpy','matplotlib','scikit-fuzzy'],
 
       classifiers=[
         # How mature is this project? Common values are

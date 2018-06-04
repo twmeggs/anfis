@@ -1,9 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(name='anfis',
-      version='0.3.0',
+      version='0.3.1',
       description='Python Adaptive Neuro Fuzzy Inference System',
       url='https://github.com/twmeggs/anfis',
+	  download_url = 'https://github.com/twmeggs/anfis/tarball/0.3.1',
       author='Tim Meggs',
       author_email='twmeggs@gmail.com',
       license='MIT',

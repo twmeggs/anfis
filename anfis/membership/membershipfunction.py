@@ -16,7 +16,7 @@ class MemFuncs:
         self.MFList = MFList
 
     def evaluateMF(self, rowInput):
-        if len(rowInput) <> len(self.MFList):
-            print "Number of variables does not match number of rule sets"
+        if len(rowInput) != len(self.MFList):
+            print("Number of variables does not match number of rule sets")
 
         return [[self.funcDict[self.MFList[i][k][0]](rowInput[i],**self.MFList[i][k][1]) for k in range(len(self.MFList[i]))] for i in range(len(rowInput))]

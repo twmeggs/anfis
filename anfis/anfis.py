@@ -6,7 +6,7 @@ Created on Thu Apr 03 07:30:34 2014
 """
 import itertools
 import numpy as np
-from membership import mfDerivs
+from anfis.membership import mfDerivs
 import copy
 
 class ANFIS:
@@ -72,7 +72,7 @@ class ANFIS:
 
             #error
             error = np.sum((self.Y-layerFive.T)**2)
-            print 'current error: ', error
+            print('current error: '+ str(error))
             average_error = np.average(np.absolute(self.Y-layerFive.T))
             self.errors = np.append(self.errors,error)
 
@@ -133,7 +133,7 @@ class ANFIS:
 
     def plotErrors(self):
         if self.trainingType == 'Not trained yet':
-            print self.trainingType
+            print(self.trainingType)
         else:
             import matplotlib.pyplot as plt
             plt.plot(range(len(self.errors)),self.errors,'ro', label='errors')
@@ -159,7 +159,7 @@ class ANFIS:
 
     def plotResults(self):
         if self.trainingType == 'Not trained yet':
-            print self.trainingType
+            print(self.trainingType)
         else:
             import matplotlib.pyplot as plt
             plt.plot(range(len(self.fittedValues)),self.fittedValues,'r', label='trained')
@@ -271,4 +271,4 @@ def predict(ANFISObj, varsToTest):
 
 
 if __name__ == "__main__":
-    print "I am main!"
+    print("I am main!")

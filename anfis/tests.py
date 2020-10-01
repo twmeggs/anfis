@@ -19,5 +19,8 @@ print(round(anf.consequents[-2][0],6))
 print(round(anf.fittedValues[9][0],6))
 if round(anf.consequents[-1][0],6) == -5.275538 and round(anf.consequents[-2][0],6) == -1.990703 and round(anf.fittedValues[9][0],6) == 0.002249:
 	print('test is good')
+
+print("Plotting errors")
 anf.plotErrors()
+print("Plotting results")
 anf.plotResults()

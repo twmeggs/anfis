@@ -1,2 +1,2 @@
-import anfis.membership.membershipfunction
-import anfis.membership.mfDerivs
+import membership.membershipfunction
+import membership.mfDerivs
